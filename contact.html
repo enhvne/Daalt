@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern photography portfolio website">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            background-color: #F2F9FF;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .social-icons div {
+            text-align: center;
+        }
+
+        .social-icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #F2F9FF;
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px #ffffff;
+            font-size: 1.5rem;
+            color: #b6bbc5;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-icons a:hover {
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.1), inset -6px -6px 12px #ffffff;
+            color: #E195AB;
+        }
+
+        .social-icons a.facebook {
+            color: #4267B2;
+        }
+
+        .social-icons a.instagram {
+            color: #E1306C;
+        }
+
+        .social-icons a.github {
+            color: #333;
+        }
+
+        .social-icons a.teams {
+            color: #6264A7;
+        }
+
+        .social-icons a.gmail {
+            color: #D14836;
+        }
+
+        .social-icons p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./cat.png" width="74" height="65" alt="header cat">
+            <div class="logo">Enkhmend Jawkhlantugs</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="social-icons">
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100095162365331" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <p>Facebook</p>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/enhvne.sh/" class="instagram"><i class="fab fa-instagram"></i></a>
+                <p>Instagram</p>
+            </div>
+            <div>
+                <a href="https://github.com/enhvne/Enkhvvnee" class="github"><i class="fab fa-github"></i></a>
+                <p>GitHub</p>
+            </div>
+            <div>
+                <a href="#" class="teams"><i class="fab fa-microsoft"></i></a>
+                <p>Microsoft Teams</p>
+            </div>
+            <div>
+                <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act&gar=WzJd&pli=1&nlr=1" class="gmail"><i class="fas fa-envelope"></i></a>
+                <p>Gmail</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <form>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Photography. All rights reserved.</p>
+    </footer>
+
+    <script>
+        $('button').click(function () {
+            alert('Message sent successfully!');
+        });
+    </script>
+</body>
+
+</html>

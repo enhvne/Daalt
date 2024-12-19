@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    background-color: #F2F9FF;
+    color: #333;
+    overflow-x: hidden;
+}
+header {
+    background-color: #FFCCE1;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #E195AB;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #E195AB;
+}
+
+.hero {
+    background: url('./flower_field.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #E195AB;
+}
+
+.hero-content p {
+    margin: 1rem 0 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.hero-content .btn {
+    background-color: #E195AB;
+    color: #FFF;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: #E195AB;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #FFCCE1;
+}
+
+.portfolio, .about, .contact {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    color: #E195AB;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    margin: 1rem auto;
+    max-width: 700px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact form input, .contact form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 0.8rem;
+    border: 1px solid #E195AB;
+    border-radius: 5px;
+    background-color: #FFF5D7;
+}
+
+.contact form button {
+    background-color: #E195AB;
+    color: #FFF;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #FFCCE1;
+}
+
+footer {
+    background-color: #FFCCE1;
+    text-align: center;
+    padding: 1rem;
+    color: #555;
+}

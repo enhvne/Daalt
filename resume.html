@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern resume website">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleres.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .resume-container {
+            width: 800px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f4cccc;
+        }
+
+        .header .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .header .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-text h1 {
+            font-size: 36px;
+            color: #f44e6b;
+        }
+
+        .header-text h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .header-text p {
+            font-size: 14px;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-text p img {
+            margin-right: 10px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .section {
+            width: 45%;
+        }
+
+        .section h3 {
+            font-size: 22px;
+            color: #f44e6b;
+            background-color: #f9cbcb;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .experience-item h4 {
+            font-size: 16px;
+            color: #f44e6b;
+            margin-bottom: 5px;
+        }
+
+        .experience-item p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .expertise ul {
+            list-style: none;
+        }
+
+        .expertise ul li {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #f4cccc;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .resume-container {
+                width: 90%;
+                padding: 10px;
+            }
+
+            .main-content {
+                flex-direction: column;
+            }
+
+            .section {
+                width: 100%;
+            }
+
+            .header .photo {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./cat.png" width="74" height="65" alt="header cat">
+            <div class="logo">Enkhmend Jawkhlantugs</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="resume-container">
+        <div class="header">
+            <div class="photo">
+                <img src="./bi.jpg" alt="Profile Photo">
+            </div>
+            <div class="header-text">
+                <h1>Enkhmend Jawkhlantugs</h1>
+                <h2>Software Engineer Student</h2>
+                <p><img src="./gmaili.jpg" alt="email" width="20" height="20"> enkheenee75@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section profile">
+                <h3>Profile</h3>
+                <p>Намайг Энхмэнд гэдэг. Программ хангамжийн инженер мэргэжлээр сурдаг. 8-р агиасаа алгоритм сурч эхлэн цаашид илүү сонирхсоноор мэргэжилээ сонгосон.</p>
+            </div>
+
+            <div class="section experience">
+                <h3>Education</h3>
+                <div class="experience-item">
+                    <h4>Sep 2023 – Present</h4>
+                    <p><strong>МУИС - Мэдээлэл технологи, электроникийн сургууль</strong></p>
+                    <p>Программ хангамж хөтөлбөрийн 2-р түвшинд суралцаж байгаа.</p>
+                </div>
+                <div class="experience-item">
+                    <h4>Sep 2020 – Jun 2023</h4>
+                    <p><strong>МУИС - Байгаль Эх лицей ахлах сургууль</strong></p>
+                    <p>Математикийн 12Б ангид бүрэн дунд боловсрол эзэмшиж төгссөн.</p>
+                </div>
+                <div class="experience-item">
+                    <h4>Sep 2011 – Jun 2020</h4>
+                    <p><strong>Тэмүүжин цогцолбор ерөнхий боловсролын сургууль</strong></p>
+                </div>
+            </div>
+
+            <div class="section expertise">
+                <h3>About</h3>
+                <ul>
+                    <li>19 years old</li>
+                    <li>Zodiac sign - Cancer</li>
+                    <li>Born and raised in Khentii province</li>
+                    <li>Interested in web development</li>
+                    <li>Likes dancing and painting</li>
+                    <li>Able to analyze and formulate problems</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Enkhmend Jawkhlantugs. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('form')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name')?.value;
+            const email = document.getElementById('email')?.value;
+            const message = document.getElementById('message')?.value;
+
+            alert(`Thank you, ${name}! Your message has been sent successfully. We'll contact you at ${email}.`);
+        });
+    </script>
+</body>
+
+</html>

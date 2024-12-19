@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern photography portfolio website">
+    <title>Enkhmend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #F2F9FF;
+        }
+
+        .hearts {
+            font-size: 23px;
+            font-weight: bold;
+            position: fixed;
+            top: -1vh;
+            left: 0;
+            animation: fall 5s linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(110vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./cat.png" width="74" height="65" alt="header cat">
+            <div class="logo">Enkhmend Jawkhlantugs</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Website </h1>
+                <p>Even the darkest night will end and the sun will rise.</p>
+                <button id="sendLove" class="btn">Send Love</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All about me.</p>
+    </footer>
+
+    <script>
+        let heartInterval;
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('hearts');
+            heart.textContent = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+
+            document.body.appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        document.getElementById('sendLove').addEventListener('click', () => {
+            heartInterval = setInterval(createHeart, 100);
+
+            setTimeout(() => {
+                clearInterval(heartInterval);
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
